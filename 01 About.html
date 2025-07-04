@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - Shiji Collaction</title>
+  <link rel="stylesheet" href="01 style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <style>
+    /* About page specific styles */
+    .about-hero {
+        margin-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(135deg, #f8f4f0, #fff);
+      gap: 3rem;
+    }
+    .about-text {
+      flex: 1 1 400px;
+      max-width: 600px;
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+    }
+    .about-text h1 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #222;
+    }
+    .about-text p {
+      font-size: 1.125rem;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+      color: #555;
+    }
+    .about-image {
+      flex: 1 1 350px;
+      max-width: 450px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .about-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .about-image:hover {
+      transform: scale(1.05);
+    }
+    .team-section {
+      padding: 3rem 2rem;
+      background: #fff;
+      text-align: center;
+    }
+    .team-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #222;
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .team-member {
+      background: #fafafa;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+      transition: box-shadow 0.3s ease;
+    }
+    .team-member:hover {
+      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+    }
+    .member-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .member-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .member-name {
+      font-weight: 600;
+      font-size: 1.25rem;
+      margin-bottom: 0.25rem;
+      color: #222;
+    }
+    .member-role {
+      font-size: 1rem;
+      color: #777;
+      margin-bottom: 0.75rem;
+    }
+    .member-bio {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.5;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .about-hero {
+        flex-direction: column;
+        padding: 3rem 1rem;
+      }
+      .about-text, .about-image {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Reuse your header/nav here -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h2>Shiji Collaction</h2>
+          <span class="logo-accent">Premium Fashion</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="01 index.html" class="nav-link">Home</a></li>
+          <li><a href="01 index.html" class="nav-link">Collection</a></li>
+          <li><a href="01 index.html" class="nav-link">Categories</a></li>
+          <li><a href="01 About.html" class="nav-link active">About</a></li>
+          <li><a href="01 contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <div class="search-box">
+            <input type="text" placeholder="Search..." />
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="nav-icons">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-count">3</span>
+          </div>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-hero">
+      <div class="about-text">
+        <h1>About Shiji Collaction</h1>
+        <p>
+          At Shiji Collaction, we believe fashion is a form of self-expression. Our mission is to bring you the latest trends and premium quality apparel that empowers your unique style.
+        </p>
+        <p>
+          Founded in 2015, Shiji Collaction has grown into a trusted fashion destination with thousands of happy customers worldwide. We carefully curate our collections to ensure you get the best of style, comfort, and sustainability.
+        </p>
+        <p>
+          Join us on this stylish journey and discover your perfect look with StyleHub.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=600&q=80" alt="About StyleHub" />
+      </div>
+    </section>
+
+    <section class="team-section">
+      <h2>Meet Our Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="member-photo">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Jane Doe" />
+          </div>
+          <div class="member-name">Jane Doe</div>
+          <div class="member-role">Founder & CEO</div>
+          <div class="member-bio">Passionate about fashion and customer experience, Jane leads StyleHub with vision and dedication.</div>
+        </div>
+        <div class="team-member">
+          <div class="member-photo">
+            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="John Smith" />
+          </div>
+          <div class="member-name">John Smith</div>
+          <div class="member-role">Creative Director</div>
+          <div class="member-bio">John brings innovative designs and trend insights to keep StyleHub ahead in fashion.</div>
+        </div>
+        <div class="team-member">
+          <div class="member-photo">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Emily Clark" />
+          </div>
+          <div class="member-name">Emily Clark</div>
+          <div class="member-role">Marketing Manager</div>
+          <div class="member-bio">Emily crafts engaging campaigns that connect StyleHub with fashion lovers worldwide.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Reuse your footer here -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Shiji Collaction</h3>
+          <p>Your premium destination for fashion and style. Discover the latest trends and express your unique personality.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="#">Women's Fashion</a></li>
+            <li><a href="#">Men's Fashion</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Footwear</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Track Order</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Shiji Collaction. All rights reserved.</p>
+        <div class="payment-methods">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-paypal"></i>
+          <i class="fab fa-cc-apple-pay"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

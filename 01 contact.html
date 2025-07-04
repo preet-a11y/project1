@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - Shiji Collaction</title>
+  <link rel="stylesheet" href="01 style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <style>
+    /* Contact page specific styles */
+    .contact-section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+      font-family: 'Poppins', sans-serif;
+    }
+    .contact-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .contact-header h1 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 2.75rem;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
+    .contact-header p {
+      font-size: 1.125rem;
+      color: #555;
+    }
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    .info-card {
+      flex: 1 1 250px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      transition: box-shadow 0.3s ease;
+    }
+    .info-card:hover {
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+    .info-card i {
+      font-size: 2.5rem;
+      color: #ff6f61;
+      margin-bottom: 1rem;
+    }
+    .info-card h3 {
+      font-weight: 600;
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: #222;
+    }
+    .info-card p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.4;
+    }
+    form.contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    form.contact-form label {
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+    form.contact-form input,
+    form.contact-form textarea {
+      padding: 0.75rem 1rem;
+      border: 1.5px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: 'Poppins', sans-serif;
+      transition: border-color 0.3s ease;
+      resize: vertical;
+    }
+    form.contact-form input:focus,
+    form.contact-form textarea:focus {
+      border-color: #ff6f61;
+      outline: none;
+    }
+    form.contact-form textarea {
+      min-height: 120px;
+    }
+    form.contact-form button {
+      align-self: flex-start;
+      background-color: #ff6f61;
+      color: #fff;
+      border: none;
+      padding: 0.85rem 2rem;
+      font-size: 1.125rem;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    form.contact-form button:hover {
+      background-color: #e85c50;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      .contact-info {
+        flex-direction: column;
+      }
+      form.contact-form button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Reuse your header/nav here -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h2>Shiji Collaction</h2>
+          <span class="logo-accent">Premium Fashion</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="01 index.html" class="nav-link">Home</a></li>
+          <li><a href="01 index.html" class="nav-link">Collection</a></li>
+          <li><a href="01 index.html" class="nav-link">Categories</a></li>
+          <li><a href="01 About.html" class="nav-link">About</a></li>
+          <li><a href="01 contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <div class="search-box">
+            <input type="text" placeholder="Search..." />
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="nav-icons">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-count">3</span>
+          </div>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <div class="contact-header">
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you! Reach out with any questions or feedback.</p>
+      </div>
+
+      <div class="contact-info">
+        <div class="info-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Our Address</h3>
+          <p>123 Fashion Ave, New York, NY 10001</p>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-phone-alt"></i>
+          <h3>Call Us</h3>
+          <p>+1 (555) 123-4567</p>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-envelope"></i>
+          <h3>Email Us</h3>
+          <p>support@stylehub.com</p>
+        </div>
+      </div>
+
+      <form class="contact-form" action="#" method="POST" novalidate>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Reuse your footer here -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Shiji Collaction</h3>
+          <p>Your premium destination for fashion and style. Discover the latest trends and express your unique personality.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="#">Women's Fashion</a></li>
+            <li><a href="#">Men's Fashion</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Footwear</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Track Order</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Shiji Collaction. All rights reserved.</p>
+        <div class="payment-methods">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-paypal"></i>
+          <i class="fab fa-cc-apple-pay"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
